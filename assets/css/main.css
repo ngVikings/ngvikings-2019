@@ -18,6 +18,10 @@
 		vertical-align: baseline;
 	}
 
+	small {
+		font-size: 80%;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -2028,7 +2032,7 @@
 		}
 
 		#banner footer {
-			margin: 2em 0 0 0;
+			margin: 2em 0 1em 0;
 		}
 
 		#banner a {
