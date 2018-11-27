@@ -1,0 +1,320 @@
+{
+  "title": "ngVikings 2019 - The legendary Angular conference in the Nordics. May 27-28th, Copenhagen, Denmark",
+  "description": "Having Angular team members, Google Developer Experts and legendary international speakers onboard, ngVikings Conference guarantees an excellent program: fresh, technically deep and 100% useful.",
+  "keywords": "event, angular, gde, google, programming, android, chrome, polymer, developers, web, cloud",
+  "dates": "May 27-28th, 2019",
+  "image": "images/social-share.png",
+  "partnershipProposition": "http://bit.ly/sponsor-ngvikings-2019",
+  "share": "Share",
+  "followOur": "Follow our",
+  "followUs": "Follow us",
+  "emailUs": "Email us",
+  "partnershipResources": "Partnership Resources",
+  "eventResources": "Event Resources",
+  "buyTicket": "Buy ticket",
+  "signIn": "Sign in",
+  "signOut": "Sign out",
+  "viewHighlights": "View Highlights",
+  "offlineMessage": "You can still work offline.",
+  "cachingComplete": "Caching complete! Future visits will work offline.",
+  "newVersionAvailable": "A new version of this app is available.",
+  "refresh": "Refresh",
+  "position": "Position",
+  "country": "Country",
+  "time": "Time",
+  "faq": "/data/faq.md",
+  "cod": "/data/cod.md",
+  "footer": {
+    "blog": "Blog"
+  },
+  "mySchedule": {
+    "title": "My Schedule",
+    "browseSession": "Browse sessions"
+  },
+  "footerRelBlock": [
+    {
+      "title": "About us",
+      "links": [
+        {
+          "name": "Meet the team",
+          "url": "/team",
+          "newTab": false
+        },
+        {
+          "name": "Sponsors",
+          "url": "/sponsors",
+          "newTab": false
+        },
+        {
+          "name": "Partners",
+          "url": "/partners",
+          "newTab": false
+        },
+        {
+          "name": "Contact us",
+          "url": "mailto:contact@ngvikings.org",
+          "newTab": false
+        }
+      ]
+    },
+    {
+      "title": "ngVikings 2018",
+      "links": [
+        {
+          "name": "Photos",
+          "url": "https://www.facebook.com/pg/ngVikings/photos/?tab=album&album_id=1749532581802652",
+          "newTab": true
+        },
+        {
+          "name": "Videos",
+          "url": "https://www.youtube.com/watch?v=WahpV6zn8lQ&list=PLVI0Ut22uwY4UC1v5fUvi2RIU4R4jPkba",
+          "newTab": true
+        },
+        {
+          "name": "Program",
+          "url": "https://2018.ngvikings.org/schedule/",
+          "newTab": true
+        },
+        {
+          "name": "Speakers",
+          "url": "https://2018.ngvikings.org/speakers/",
+          "newTab": true
+        }
+      ]
+    },
+    {
+      "title": "ngVikings 2017",
+      "links": [
+        {
+          "name": "Photos",
+          "url": "https://www.facebook.com/1213142038775045/photos/?tab=album&album_id=1361262560629658",
+          "newTab": true
+        },
+        {
+          "name": "Videos",
+          "url": "https://www.elastic.co/search?fv-website_area=videos&q=ngvikings",
+          "newTab": true
+        },
+        {
+          "name": "Program",
+          "url": "https://2017.ngvikings.org/schedule/",
+          "newTab": true
+        },
+        {
+          "name": "Speakers",
+          "url": "https://2017.ngvikings.org/speakers/",
+          "newTab": true
+        }
+      ]
+    },
+    {
+      "title": "Event Resources",
+      "links": [
+        {
+          "name": "Partnership Proposition",
+          "url": "http://bit.ly/sponsor-ngvikings-2019",
+          "newTab": true
+        },
+        {
+          "name": "Call for Papers",
+          "url": "https://bit.ly/cfp-ng-vikings-2019",
+          "newTab": true
+        },
+        {
+          "name": "FAQ",
+          "url": "/faq/",
+          "newTab": false
+        }
+        ,
+        {
+          "name": "Code of Conduct",
+          "url": "/cod/",
+          "newTab": false
+        }
+      ]
+    }
+  ],
+  "subscribeNote": "No spam, only the latest news and updates!",
+  "codeOfConduct": "Code of Conduct",
+  "aboutBlock": {
+    "title": "What you need to know, before you ask.",
+    "callToAction": {
+      "featuredSessions": {
+        "description": "Having Angular team members, Google Developer Experts and legendary international speakers onboard, ngVikings Conference guarantees an excellent program: fresh, technically deep and 100% useful.",
+        "label": "Explore featured speakers from 2018",
+        "link": "https://2018.ngvikings.org/speakers/"
+      },
+      "howItWas": {
+        "description": "We did our best to have the ngVikings rock in 2018!",
+        "label": "See how it was in 2018",
+        "youtubeId": "-wVodWS-9OU"
+      },
+      "sponsor": {
+        "description": "Are you interested in sponsoring ngVikings 2019?",
+        "label": "Become sponsor",
+        "link": "http://bit.ly/sponsor-ngvikings-2019"
+      }
+    },
+    "statisticsBlock": {
+      "attendees": {
+        "label": "Attendees",
+        "number": "400"
+      },
+      "days": {
+        "label": "Days",
+        "number": "2"
+      },
+      "sessions": {
+        "label": "Sessions",
+        "number": "50"
+      },
+      "tracks": {
+        "label": "Tracks",
+        "number": "2"
+      }
+    }
+  },
+  "ticketsBlock": {
+    "title": "Tickets",
+    "ticketsDetails": "Tickets grant access to all conference sections, coffee breaks, lunch and party. Accommodation is NOT included in the ticket price. All prices INCLUDE VAT 25%. As a EU company you can buy a ticket with VAT 0%",
+    "soldOut": "You missed it!",
+    "notAvailableYet": "Not available yet",
+    "save": "Save ${discount}% today"
+  },
+  "partnersBlock": {
+    "title": "Partners",
+    "button": "Become a partner",
+    "form": {
+      "title": "Become a partner!",
+      "submitLabel": "Submit",
+      "fullName": "Full Name",
+      "companyName": "Company Name"
+    },
+    "toast": "We will contact you soon!"
+  },
+  "featuredVideos": {
+    "title": "ngVikings 2018 featured videos",
+    "callToAction": {
+      "label": "See all videos",
+      "link": "https://www.youtube.com/watch?v=WahpV6zn8lQ&list=PLVI0Ut22uwY4UC1v5fUvi2RIU4R4jPkba"
+    }
+  },
+  "blog": {
+    "published": "Published",
+    "suggested": "Up next"
+  },
+  "latestPostsBlock": {
+    "title": "The latest news",
+    "callToAction": {
+      "label": "View all stories",
+      "link": "/blog/"
+    }
+  },
+  "speakers": {
+    "skills": "Skills",
+    "previousYears": "Years",
+    "previousYear": "Year",
+    "description": "We will release more speakers soon. Stay tuned!"
+  },
+  "speakersBlock": {
+    "title": "Featured speakers",
+    "callToAction": {
+      "label": "View all speakers",
+      "link": "/speakers/"
+    }
+  },
+  "previousSpeakersBlock": {
+    "title": "Previous years speakers",
+    "callToAction": {
+      "label": "View all",
+      "link": "/previous-speakers/"
+    }
+  },
+  "galleryBlock": {
+    "title": "ngVikings 2018",
+    "description": "What makes ngVikings so special? A spirit! Openness, friendliness, fun are must have addons to the technical sessions at our conference. You will meet your old friends there. And you will make lots of new friends!",
+    "callToAction": {
+      "label": "See all photos",
+      "link": "https://www.facebook.com/pg/ngVikings/photos/?tab=albums"
+    }
+  },
+  "mapBlock": {
+    "title": "Location"
+  },
+  "subscribeBlock": {
+    "callToAction": {
+      "description": "Get notified about the important conference updates",
+      "label": "Subscribe"
+    },
+    "yourEmail": "Your email",
+    "emailAddress": "Email Address",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "formTitle": "Get the latest updates, insights and news about ngVikings sent to your inbox.",
+    "emailRequired": "Please enter a valid email address.",
+    "subscribe": "Subscribe",
+    "subscribed": "Subscribed",
+    "close": "Close",
+    "generalError": "Some error has occured. Please, try again later.",
+    "toast": "Successfully subscribed!"
+  },
+  "team": {
+    "description": "ngVikings is a 100% community-driven event comprised of many Nordic Angular groups with more than 3500 active members in total:<ul><li>AngularJS Copenhagen<li>GDG Copenhagen<li>AngularJS Oslo<li>AngularJS Gothenburg<li>ngAarhus<li>ngStockholm<li>Angular Finland</ul>"
+  },
+  "schedule": {
+    "saveSessionsSignedOut": "Sign in to save sessions"
+  },
+  "sessionDetails": {
+    "contentLevel": "Content level",
+    "viewPresentation": "View presentation",
+    "viewVideo": "View video",
+    "speakers": "Speakers"
+  },
+  "speakerDetails": {
+    "sessions": "Sessions"
+  },
+  "notifications": {
+    "default": "Enable notifications",
+    "enabled": "We will miss you but you can unsubscribe anytime",
+    "blocked": "We can't send you notifications right now. Please enable notifications in your browser",
+    "subscribe": "Subscribe",
+    "unsubscribe": "Unsubscribe",
+    "enable": {
+      "label": "Enable",
+      "link": "https://pushassist.com/knowledgebase/how-to-enable-or-disable-push-notifications-on-chrome-firefox-safari-b/"
+    },
+    "toast": {
+      "title": "Open"
+    }
+  },
+  "aboutOrganizerBlock": {
+    "image": "/images/posts/team.jpg",
+    "blocks": [
+      {
+        "title": "Organizer",
+        "description": "ngVikings is a 100% community-driven event comprised of many Nordic Angular groups with more than 3500 active members in total:<ul><li>AngularJS Copenhagen<li>GDG Copenhagen<li>AngularJS Oslo<li>AngularJS Gothenburg<li>ngAarhus<li>ngStockholm<li>Angular Finland</ul>",
+        "callToAction": {
+          "label": "Open team page",
+          "link": "/team"
+        }
+      },
+      {
+        "title": "What is ngVikings?",
+        "description": "ngVikings is a community-driven Angular conference travelling across the Nordic countries. The third ngVikings event is scheduled for the 27th & 28th of May in Copenhagen, Denmark. This event will gather 400+ front-end developers from different countries together. It's the largest Angular conference hosted in the Nordic countries. The talks and workshops will be mostly about Angular and other technologies related to the Angular framework. ngVikings operates as a non-profit organization.",
+        "callToAction": {
+          "label": "Read more",
+          "link": "/team",
+          "newTab": false
+        }
+      }
+    ]
+  },
+  "signInDialog": {
+    "alreadyHaveAccount": "You already have an account",
+    "alreadyUsed": "You've already used",
+    "signInToContinue": {
+      "part1": "Sign in with",
+      "part2": "to continue."
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "organizer": {
+    "name": "ngVikings Team",
+    "twitter": "ngVikingsConf",
+    "blog": "/blog/",
+    "url": "https://ngvikings.org"
+  },
+  "startDate": "2019-05-273T09:00:00+01:00",
+  "endDate": "2019-05-28T19:00:00+01:00",
+  "webapp": {
+    "shortName": "ngVikings2019",
+    "themeColor": "#2855a5",
+    "backgroundColor": "#2855a5"
+  },
+  "dateFormat": {
+    "locale": "en-US"
+  },
+  "hashtag": "ngVikings",
+  "disabledSchedule": false,
+  "showSessionShortAbstract": true,
+  "navigation": [
+    {
+      "route": "home",
+      "permalink": "/",
+      "label": "Home"
+    },
+    {
+      "route": "",
+      "permalink": "https://bit.ly/cfp-ng-vikings-2019",
+      "label": "Call For Papers"
+    },
+    {
+      "route": "",
+      "permalink": "http://bit.ly/sponsor-ngvikings-2019",
+      "label": "Call For Sponsors"
+    },
+    {
+      "route": "team",
+      "permalink": "/team/",
+      "label": "Team"
+    },
+    {
+      "route": "blog",
+      "permalink": "/blog/",
+      "label": "Blog"
+    }
+  ],
+  "heroSettings": {
+    "home": {
+      "description": "The main Angular event in the Nordics. And the only travelling Angular conference in the world.",
+      "background": {
+        "color": "#2855a5",
+        "image": "/images/backgrounds/home.jpg"
+      },
+      "fontColor": "#FFF"
+    },
+    "blog": {
+      "title": "News",
+      "background": {
+        "color": "#FFF"
+      },
+      "fontColor": "#2855a5"
+    },
+    "schedule": {
+      "title": "Schedule",
+      "background": {
+        "color": "#FFF"
+      },
+      "fontColor": "#2855a5"
+    },
+    "speakers": {
+      "title": "Speakers",
+      "description": "",
+      "background": {
+        "color": "#FFF"
+      },
+      "fontColor": "#2855a5"
+    },
+    "team": {
+      "title": "Team",
+      "description": "",
+      "background": {
+        "color": "#fff"
+      },
+      "fontColor": "#2855a5"
+    },
+    "attendees": {
+      "title": "For Attendees",
+      "description": "",
+      "background": {
+        "color": "#fff"
+      },
+      "fontColor": "#2855a5"
+    },
+    "sponsors": {
+      "title": "Sponsors",
+      "description": "",
+      "background": {
+        "color": "#fff"
+      },
+      "fontColor": "#2855a5"
+    },
+    "partners": {
+      "title": "Partners",
+      "description": "",
+      "background": {
+        "color": "#fff"
+      },
+      "fontColor": "#2855a5"
+    },
+    "faq": {
+      "title": "FAQ",
+      "background": {
+        "color": "#fff"
+      },
+      "fontColor": "#2855a5"
+    },
+    "code": {
+      "title": "Code of Conduct",
+      "background": {
+        "color": "#fff"
+      },
+      "fontColor": "#2855a5"
+    }
+  },
+  "location": {
+    "label": "Location",
+    "name": "DGI-byen",
+    "city": "Copenhagen",
+    "short": "Copenhagen, Denmark",
+    "address": "Tietgensgade 65, 1704, Copenhagen, Denmark",
+    "pointer": {
+      "latitude": 55.6694597,
+      "longitude": 12.5623628,
+      "zoom": 17
+    },
+    "mapCenter": {
+      "latitude": 55.6694597,
+      "longitude": 12.5623628
+    },
+    "description": "DGI-byen is the perfect setting for meetings, games and educational events. This open and friendly venue in downtown Copenhagen offers a wide range of possibilities for acquiring valuable knowledge and know-how and for reaching goals and visions. Enjoy the unique atmosphere, stay focused, and let the inspiration unfold to ensure cooperation, develop ideas or whatever else is relevant for you and your colleagues. "
+  },
+  "mediaQueries": {
+    "xs": {
+      "max": "639px"
+    },
+    "sm": {
+      "min": "640px",
+      "max": "811px"
+    },
+    "md": {
+      "min": "812px",
+      "max": "1023px"
+    },
+    "lg": {
+      "min": "1024px"
+    }
+  },
+  "socialNetwork": {
+    "follow": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/ngVikings"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/ngVikingsConf/"
+      },
+      {
+        "name": "youtube",
+        "url": "https://youtube.com/c/ngVikings/"
+      }
+    ],
+    "share": [
+      {
+        "name": "gplus",
+        "url": "https://plus.google.com/share?url="
+      },
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/sharer.php?u="
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/intent/tweet?text="
+      }
+    ]
+  },
+  "mailto": "contact@ngvikings.org",
+  "mailchimp": {
+    "url": "//ngvikings.us14.list-manage.com/subscribe/post?u=6b46654a7c89c5e401545b749&amp;id=cc658f949f",
+    "name": "6b46654a7c89c5e401545b749_cc658f949f"
+  },
+  "signInProviders": {
+    "providersData": [
+      {
+        "name": "google",
+        "label": "Sign in with Google",
+        "url": "https://accounts.google.com"
+      },
+      {
+        "name": "twitter",
+        "label": "Sign in with Twitter",
+        "url": "https://twitter.com"
+      }
+    ],
+    "allowedProvidersUrl": [
+      "https://accounts.google.com",
+      "https://twitter.com"
+    ]
+  },
+  "contentLoaders": {
+    "schedule": {
+      "itemsCount": 2
+    },
+    "blog": {
+      "itemsCount": 3
+    },
+    "speakers": {
+      "itemsCount": 4
+    },
+    "previousSpeakers": {
+      "itemsCount": 6
+    },
+    "tickets": {
+      "itemsCount": 5
+    }
+  }
+}
