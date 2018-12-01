@@ -25,6 +25,11 @@
       "label": "Home"
     },
     {
+      "route": "speakers",
+      "permalink": "/speakers",
+      "label": "Speakers"
+    },
+    {
       "route": "",
       "permalink": "https://bit.ly/cfp-ng-vikings-2019",
       "label": "Call For Papers"
