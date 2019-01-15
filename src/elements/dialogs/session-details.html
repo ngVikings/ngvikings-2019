@@ -42,7 +42,8 @@
         ></iron-icon>
         <app-toolbar>
           <div class="dialog-container header-content" layout vertical end-justified>
-            <h2 class="name">[[session.title]]</h2>
+            <h2 class="name" hidden$="[[session.buyLink]]">[[session.title]]</h2>
+            <h2 class="name" hidden$="[[!session.buyLink]]"><a href="[[session.buyLink]]" target="_blank" rel="noopener">[[session.title]]</a></h2>
             <div class="tags" hidden$="[[!session.tags.length]]">
               <template is="dom-repeat" items="[[session.tags]]" as="tag">
                 <span class="tag" style$="color: [[_getTagColor(tag)]]">[[tag]]</span>

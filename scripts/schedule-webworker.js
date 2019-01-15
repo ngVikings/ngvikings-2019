@@ -58,7 +58,9 @@ self.addEventListener('message', ({ data }) => {
 
   for (const dayKey of Object.keys(scheduleRaw)) {
     const day = scheduleRaw[dayKey];
-    const tracksNumber = day.tracks.length;
+    // Hide Talk before we announce those
+    if (day && !day.published) {continue;}
+    const tracksNumber = day.tracks && day.tracks.length;
     let dayTags = [];
     let timeslots = [];
     let extensions = {};
@@ -102,7 +104,7 @@ self.addEventListener('message', ({ data }) => {
             mainTag,
             id: sessionId.toString(),
             day: dayKey,
-            track: subsession.track || day.tracks[sessionIndex],
+            track: subsession.track || (day.tracks && day.tracks[sessionIndex]),
             startTime,
             endTime,
             duration: getDuration(dayKey, startTime, endTime),
