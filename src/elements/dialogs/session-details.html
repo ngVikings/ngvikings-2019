@@ -21,7 +21,12 @@
 <dom-module id="session-details">
   <template>
     <style is="custom-style" include="shared-styles dialog-styles flex flex-alignment positioning"></style>
-
+    <style>
+      .cta-button {
+        margin-top: 24px;
+        width: 100%;
+      }
+    </style>
     <polymer-helmet
       title="[[session.title]] | {$ title $}"
       description="[[session.description]]"
@@ -68,6 +73,7 @@
             on-tap="_toggleFeaturedSession"
           ></paper-fab>
         </div>
+
         <h3 class="meta-info" hidden$="[[disabledSchedule]]">[[session.dateReadable]], [[session.startTime]] - [[session.endTime]]</h3>
         <h3 class="meta-info" hidden$="[[disabledSchedule]]">[[session.track.title]]</h3>
         <h3 class="meta-info" hidden$="[[!session.complexity]]">{$ sessionDetails.contentLevel $}:
@@ -121,6 +127,16 @@
             </a>
           </template>
         </div>
+    
+        <a hidden$="[[!session.buyLink]]" href="[[session.buyLink]]" target="_blank" rel="noopener noreferrer">
+          <paper-button
+            class="cta-button"
+            primary>
+            <iron-icon icon="hoverboard:ticket"></iron-icon>
+            Reserve Now
+          </paper-button>
+        </a>
+      
       </div>
     </app-header-layout>
 

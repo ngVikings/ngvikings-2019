@@ -30,6 +30,11 @@
       "label": "Speakers"
     },
     {
+      "route": "workshop",
+      "permalink": "/workshops",
+      "label": "Workshops"
+    },
+    {
       "route": "",
       "permalink": "https://bit.ly/cfp-ng-vikings-2019",
       "label": "Call For Papers"
