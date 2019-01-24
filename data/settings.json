@@ -53,6 +53,11 @@
       "route": "blog",
       "permalink": "/blog/",
       "label": "Blog"
+    },
+    {
+      "route": "",
+      "permalink": "http://ng-girls.org/ngVikings-2019/",
+      "label": "Ng-Girls"
     }
   ],
   "heroSettings": {
