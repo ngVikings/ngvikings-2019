@@ -25,14 +25,19 @@
       "label": "Home"
     },
     {
-      "route": "speakers",
-      "permalink": "/speakers",
-      "label": "Speakers"
+      "route": "schedule",
+      "permalink": "/schedule",
+      "label": "Schedule"
     },
     {
       "route": "workshop",
       "permalink": "/workshops",
       "label": "Workshops"
+    },
+    {
+      "route": "speakers",
+      "permalink": "/speakers",
+      "label": "Speakers"
     },
     {
       "route": "",
