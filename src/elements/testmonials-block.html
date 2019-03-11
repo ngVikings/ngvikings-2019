@@ -1,0 +1,142 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/polymer/lib/mixins/gesture-event-listeners.html">
+
+<link rel="import" href="../../bower_components/plastic-image/plastic-image.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+
+<link rel="import" href="../mixins/utils-functions.html">
+<link rel="import" href="../mixins/redux-mixin.html">
+<link rel="import" href="../mixins/testmonials-hoc.html">
+<link rel="import" href="../elements/text-truncate.html">
+<link rel="import" href="./shared-styles.html">
+
+<dom-module id="testmonials-block">
+  <template>
+    <style is="custom-style" include="shared-styles flex flex-alignment positioning"></style>
+
+    <style>
+
+      :host {
+        display: block;
+      }
+
+      .testmonials-wrapper {
+        margin: 40px 0 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px 16px;
+      }
+
+      .testmonial {
+        text-align: center;
+      }
+
+      .photo {
+        width: 68px;
+        height: 68px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
+        overflow: hidden;
+        transform: translateZ(0);
+      }
+
+      .description {
+        text-align: left;
+        text-indent: 2em;
+        color: var(--primary-text-color);
+      }
+      .name::before {
+        content: '-- ';
+      }
+
+      .name {
+        margin-top: 8px;
+        font-size: 0.85em;
+        line-height: 1em;
+        text-align: right;
+        font-weight: bold;
+      }
+
+      @media (min-width: 640px) {
+        .photo {
+          width: 68px;
+          height: 68px;
+        }
+      }
+
+      @media (min-width: 812px) {
+        .testmonials-wrapper {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .testmonials-wrapper {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+    </style>
+
+    <div class="container">
+      <h1 class="container-title">{$ testmonialsBlock.title $}</h1>
+      <div class="testmonials-wrapper">
+        <template is="dom-repeat" items="[[featuredTestmonials]]" as="t">
+          <div class="testmonial">
+            <div relative>
+              <plastic-image
+                class="photo"
+                srcset="[[t.photoUrl]]"
+                sizing="cover"
+                lazy-load preload fade
+              ></plastic-image>
+            </div>
+
+            <div class="description">
+              <text-truncate lines="10">
+                <div class="origin">[[t.description]]</div>
+              </text-truncate>
+              <text-truncate lines="1">
+                  <span class="name">[[t.name]]</span>
+              </text-truncate>
+            </div>
+
+          </div>
+        </template>
+      </div>
+
+    </div>
+
+  </template>
+
+  <script>
+
+    // eslint-disable-next-line no-undef
+    class TestmonialsBlock extends UtilsFunctions(TestmonialsHoC(
+      // eslint-disable-next-line no-undef
+      ReduxMixin(Polymer.GestureEventListeners(Polymer.Element))
+    )) {
+      static get is() {
+        return 'testmonials-block';
+      }
+
+      static get properties() {
+        return {
+          testmonialsRaw: {
+            type: Object,
+            statePath: 'testmonials.list',
+            observer: '_generateTestmonials',
+          },
+        };
+      }
+
+      _generateTestmonials(testmonials) {
+        const featuredTestmonials = this.testmonials
+          .filter((t) => t.featured || true);
+        this.set('featuredTestmonials', featuredTestmonials);
+      }
+    }
+
+    window.customElements.define(TestmonialsBlock.is, TestmonialsBlock);
+  </script>
+</dom-module>
