@@ -258,6 +258,41 @@ const blogActions = {
   },
 };
 
+const testmonialsActions = {
+  fetchList: () => (dispatch) => {
+    dispatch({
+      type: FETCH_TESTMONIALS,
+    });
+
+    firebase.firestore()
+      .collection('testmonials')
+      .get()
+      .then((snaps) => {
+        const list = snaps.docs
+          .map((snap) => Object.assign({}, snap.data(), { id: snap.id }));
+
+        const obj = list.reduce(
+          (acc, curr) => Object.assign({}, acc, { [curr.id]: curr }),
+          {}
+        );
+
+        dispatch({
+          type: FETCH_TESTMONIALS_SUCCESS,
+          payload: {
+            obj,
+            list,
+          },
+        });
+      })
+      .catch((error) => {
+        dispatch({
+          type: FETCH_TESTMONIALS_FAILURE,
+          payload: { error },
+        });
+      });
+  },
+};
+
 const speakersActions = {
   fetchList: () => (dispatch) => {
     dispatch({

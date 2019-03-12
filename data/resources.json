@@ -210,6 +210,9 @@
       "link": "/blog/"
     }
   },
+  "testmonialsBlock": {
+    "title": "Testimonials"
+  },
   "speakers": {
     "skills": "Skills",
     "previousYears": "Years",

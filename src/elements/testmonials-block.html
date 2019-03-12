@@ -1,0 +1,197 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/polymer/lib/mixins/gesture-event-listeners.html">
+
+<link rel="import" href="../../bower_components/plastic-image/plastic-image.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+
+<link rel="import" href="../mixins/utils-functions.html">
+<link rel="import" href="../mixins/redux-mixin.html">
+<link rel="import" href="../mixins/testmonials-hoc.html">
+<link rel="import" href="../elements/text-truncate.html">
+<link rel="import" href="./shared-styles.html">
+
+<dom-module id="testmonials-block">
+  <template>
+    <style is="custom-style" include="shared-styles flex flex-alignment positioning"></style>
+
+    <style>
+
+      :host {
+        display: block;
+      }
+
+      .testmonials-wrapper {
+        margin: 40px 0 32px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 32px 16px;
+      }
+
+      .testmonial {
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+      }
+
+      .photo {
+        width: 68px;
+        height: 68px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
+        overflow: hidden;
+        transform: translateZ(0);
+      }
+
+      .testimonial-quote {
+          font-size: 14px;
+      }
+
+    .testimonial-quote blockquote {
+        /* Negate theme styles */
+        border: 0;
+        margin: 0;
+        padding: 0;
+
+        background: none;
+        color: gray;
+        font-family: Georgia, serif;
+        font-size: 1.25em;
+        font-style: italic;
+        line-height: 1.4 !important;
+        margin: 0;
+        position: relative;
+        text-shadow: 0 1px white;
+        z-index: 600;
+        text-align: left;
+    }
+
+    .testimonial-quote blockquote * {
+        box-sizing: border-box;
+    }
+
+    .testimonial-quote blockquote p {
+        color: #75808a;
+        text-indent: 2em;
+        line-height: 1.2 !important;
+    }
+
+    .testimonial-quote blockquote p:first-child:before {
+        content: '\201C';
+        color: #81bedb;
+        font-size: 4em;
+        font-weight: 700;
+        opacity: .3;
+        position: absolute;
+        top: -.1em;
+        left: -.55em;
+        text-shadow: none;
+        z-index: -300;
+    }
+
+    .testimonial-quote cite {
+        color: gray;
+        display: block;
+        font-size: .8em;
+        margin-top: 15px;
+        text-align: right;
+    }
+
+    .testimonial-quote cite span {
+        color: #5e5e5e;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: 0 1px white;
+    }
+
+    .testimonial-quote {
+        position: relative;
+    }
+
+      @media (min-width: 640px) {
+        .photo {
+          width: 68px;
+          height: 68px;
+        }
+      }
+
+      @media (min-width: 812px) {
+        .testmonials-wrapper {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .testmonials-wrapper {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+    </style>
+
+    <div class="container">
+      <h1 class="container-title">{$ testmonialsBlock.title $}</h1>
+      <div class="testmonials-wrapper">
+        <template is="dom-repeat" items="[[featuredTestmonials]]" as="t">
+          <div class="testmonial">
+            <div relative>
+              <plastic-image
+                class="photo"
+                srcset="[[t.photoUrl]]"
+                sizing="cover"
+                lazy-load preload fade
+              ></plastic-image>
+            </div>
+
+            <div class="testimonial-quote">
+              <div class="quote-container">
+                <text-truncate lines="20">
+                  <blockquote>
+                      <p>[[t.description]]</p>
+                  </blockquote>
+                </text-truncate>
+                <cite><span>[[t.name]]</span></cite>
+              </div>
+             </div>
+
+          </div>
+        </template>
+      </div>
+
+    </div>
+
+  </template>
+
+  <script>
+
+    // eslint-disable-next-line no-undef
+    class TestmonialsBlock extends UtilsFunctions(TestmonialsHoC(
+      // eslint-disable-next-line no-undef
+      ReduxMixin(Polymer.GestureEventListeners(Polymer.Element))
+    )) {
+      static get is() {
+        return 'testmonials-block';
+      }
+
+      static get properties() {
+        return {
+          testmonialsRaw: {
+            type: Object,
+            statePath: 'testmonials.list',
+            observer: '_generateTestmonials',
+          },
+        };
+      }
+
+      _generateTestmonials(testmonials) {
+        const featuredTestmonials = this.testmonials
+          .filter((t) => t.featured || true);
+        this.set('featuredTestmonials', featuredTestmonials);
+      }
+    }
+
+    window.customElements.define(TestmonialsBlock.is, TestmonialsBlock);
+  </script>
+</dom-module>

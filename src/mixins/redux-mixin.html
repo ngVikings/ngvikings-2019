@@ -107,6 +107,11 @@
       fetchingError: null,
       list: [],
     },
+    testmonials: {
+      fetching: false,
+      fetchingError: null,
+      list: [],
+    },
     user: {
       signedIn: false,
     },
@@ -135,6 +140,7 @@
       user: userReducer(state.user, action),
       subscribed: subscribeReducer(state.subscribed, action),
       toast: toastReducer(state.toast, action),
+      testmonials: testmonialsReducer(state.testmonials, action),
       notifications: notificationsReducer(state.notifications, action),
     };
   };

@@ -1,0 +1,36 @@
+<link rel="import" href="../mixins/redux-mixin.html">
+<script>
+  /* eslint-disable no-unused-vars */
+
+  /* @polymerMixin */
+  const TestmonialsHoC = (subclass) => class extends ReduxMixin(subclass) {
+    static get properties() {
+      return {
+        testmonials: {
+          type: Array,
+          statePath: 'testmonials.list',
+        },
+        testmonialsMap: {
+          type: Object,
+          statePath: 'testmonials.obj',
+        },
+        testmonialsFetching: {
+          type: Boolean,
+          statePath: 'testmonials.fetching',
+        },
+        testmonialsFetchingError: {
+          type: Object,
+          statePath: 'testmonials.fetchingError',
+        },
+      };
+    }
+
+    connectedCallback() {
+      super.connectedCallback();
+
+      if (!this.testmonialsFetching && (!this.testmonials || !this.testmonials.length)) {
+        this.dispatch(testmonialsActions.fetchList());
+      }
+    }
+  };
+</script>
