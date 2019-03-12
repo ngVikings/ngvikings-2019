@@ -23,12 +23,14 @@
       .testmonials-wrapper {
         margin: 40px 0 32px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 32px 16px;
       }
 
       .testmonial {
+        padding: 10px;
         text-align: center;
+        box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
       }
 
       .photo {
@@ -40,22 +42,73 @@
         transform: translateZ(0);
       }
 
-      .description {
-        text-align: left;
-        text-indent: 2em;
-        color: var(--primary-text-color);
-      }
-      .name::before {
-        content: '-- ';
+      .testimonial-quote {
+          font-size: 14px;
       }
 
-      .name {
-        margin-top: 8px;
-        font-size: 0.85em;
-        line-height: 1em;
+    .testimonial-quote blockquote {
+        /* Negate theme styles */
+        border: 0;
+        margin: 0;
+        padding: 0;
+
+        background: none;
+        color: gray;
+        font-family: Georgia, serif;
+        font-size: 1.25em;
+        font-style: italic;
+        line-height: 1.4 !important;
+        margin: 0;
+        position: relative;
+        text-shadow: 0 1px white;
+        z-index: 600;
+        text-align: left;
+    }
+
+    .testimonial-quote blockquote * {
+        box-sizing: border-box;
+    }
+
+    .testimonial-quote blockquote p {
+        color: #75808a;
+        text-indent: 2em;
+        line-height: 1.2 !important;
+    }
+
+    .testimonial-quote blockquote p:first-child:before {
+        content: '\201C';
+        color: #81bedb;
+        font-size: 4em;
+        font-weight: 700;
+        opacity: .3;
+        position: absolute;
+        top: -.1em;
+        left: -.55em;
+        text-shadow: none;
+        z-index: -300;
+    }
+
+    .testimonial-quote cite {
+        color: gray;
+        display: block;
+        font-size: .8em;
+        margin-top: 15px;
         text-align: right;
-        font-weight: bold;
-      }
+    }
+
+    .testimonial-quote cite span {
+        color: #5e5e5e;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: 0 1px white;
+    }
+
+    .testimonial-quote {
+        position: relative;
+    }
 
       @media (min-width: 640px) {
         .photo {
@@ -92,14 +145,16 @@
               ></plastic-image>
             </div>
 
-            <div class="description">
-              <text-truncate lines="10">
-                <div class="origin">[[t.description]]</div>
-              </text-truncate>
-              <text-truncate lines="1">
-                  <span class="name">[[t.name]]</span>
-              </text-truncate>
-            </div>
+            <div class="testimonial-quote">
+              <div class="quote-container">
+                <text-truncate lines="20">
+                  <blockquote>
+                      <p>[[t.description]]</p>
+                  </blockquote>
+                </text-truncate>
+                <cite><span>[[t.name]]</span></cite>
+              </div>
+             </div>
 
           </div>
         </template>
