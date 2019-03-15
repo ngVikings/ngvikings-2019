@@ -56,6 +56,11 @@
     },
     {
       "route": "",
+      "permalink": "http://bit.ly/ng-vikings-scholarship-2019",
+      "label": "Scholarship"
+    },
+    {
+      "route": "",
       "permalink": "http://ng-girls.org/ngVikings-2019/",
       "label": "Ng-Girls"
     }
