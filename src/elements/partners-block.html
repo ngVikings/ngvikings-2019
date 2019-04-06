@@ -42,6 +42,14 @@
         color: var(--default-primary-color);
       }
 
+      /*
+       * style for cinemajs-logo.svg to change color
+       * because it's whyte
+       */
+      #sizedImgDiv {
+        filter: invert(0.3) sepia(1) saturate(20);
+      }
+
       @media (min-width: 640px) {
         .logos-wrapper {
           grid-template-columns: repeat(4, 1fr);
