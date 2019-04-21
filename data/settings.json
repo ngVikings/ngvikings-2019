@@ -141,7 +141,7 @@
   "location": {
     "label": "Location",
     "name": "DGI-byen",
-    "city": "Copenhagen",
+    "city": "DGI-byen, Copenhagen",
     "short": "Copenhagen, Denmark",
     "address": "Tietgensgade 65, 1704, Copenhagen, Denmark",
     "pointer": {
