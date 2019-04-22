@@ -148,15 +148,15 @@
     "name": "DGI-byen",
     "city": "DGI-byen, Copenhagen",
     "short": "Copenhagen, Denmark",
-    "address": "Tietgensgade 65, 1704, Copenhagen, Denmark",
+    "address": "Ingerslevsgade, 1704 København V, Denmark",
     "pointer": {
-      "latitude": 55.6694597,
-      "longitude": 12.5623628,
+      "latitude": 55.669475,
+      "longitude": 12.564951,
       "zoom": 17
     },
     "mapCenter": {
-      "latitude": 55.6694597,
-      "longitude": 12.5623628
+      "latitude": 55.669475,
+      "longitude": 12.564951
     },
     "description": "DGI-byen is the perfect setting for meetings, games and educational events. This open and friendly venue in downtown Copenhagen offers a wide range of possibilities for acquiring valuable knowledge and know-how and for reaching goals and visions. Enjoy the unique atmosphere, stay focused, and let the inspiration unfold to ensure cooperation, develop ideas or whatever else is relevant for you and your colleagues. "
   },
