@@ -131,7 +131,7 @@ self.addEventListener('message', ({ data }) => {
         const end = `${timeslotsIndex +
         (timeslot.sessions[sessionIndex].extend || 0) + 1} / ${sessionsLen !== 1
           ? sessionIndex + 2 : Object.keys(extensions).length ? Object.keys(extensions)[0]
-            : tracksNumber + 1}`;
+            : tracksNumber + 2}`; // counting office hours
 
         if (timeslot.sessions[sessionIndex].extend) {
           extensions[sessionIndex + 1] = timeslot.sessions[sessionIndex].extend;
